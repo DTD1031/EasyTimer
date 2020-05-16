@@ -40,13 +40,13 @@
 }
 
 - (void)createAndStartMyBaby {
-    
+    //创建一个类，跑timer；
     self.baby = [[MyBaby alloc] init];
     [self.baby startTimer];
 }
 
 - (void)freeMyBaby {
-    
+    //让这个类的引用计数归零释放掉，看timer的表现
     NSLog(@"========free my baby!!=======");
     self.baby = nil;
 }

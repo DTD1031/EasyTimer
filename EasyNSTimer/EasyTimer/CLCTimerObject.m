@@ -6,13 +6,13 @@
 //  Copyright © 2020 CLC. All rights reserved.
 //
 
-#import "NSTimerObject.h"
+#import "CLCTimerObject.h"
 
-@interface NSTimerObject ()
+@interface CLCTimerObject ()
 
 @end
 
-@implementation NSTimerObject
+@implementation CLCTimerObject
 
 - (void)dealloc {
     
@@ -27,12 +27,15 @@
     return NO;
 }
 
+#pragma mark -
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     //target还没释放  --> 返回的是self.target对象
     //target被释放了  --> 返回的是nil，进入下一步消息转发
-    NSLog(@"send to target");
+    NSLog(@"send to aTarget");
     return self.target;
 }
+
+#pragma mark -
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
     NSLog(@"return Signature");
@@ -40,10 +43,11 @@
 }
 
 - (void)forwardInvocation:(NSInvocation *)invocation {
-    NSLog(@"forwordInvocation!");
+    NSLog(@"call forwordInvocation");
     [self _invalidateTimer];
 }
 
+#pragma mark -
 - (void)_invalidateTimer {
     NSLog(@"invalid timer");
     if (self.myTimer) {

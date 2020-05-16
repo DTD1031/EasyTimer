@@ -7,7 +7,7 @@
 //
 
 #import "NSTimer+Easy.h"
-#import "NSTimerObject.h"
+#import "CLCTimerObject.h"
 
 @implementation NSTimer (Easy)
 
@@ -17,10 +17,10 @@
 
 + (NSTimer *)clc_scheduledTimerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(id)userInfo repeats:(BOOL)yesOrNo {
     
-    NSTimerObject *obj = [[NSTimerObject alloc] init];
+    CLCTimerObject *obj = [[CLCTimerObject alloc] init];
     obj.target = aTarget; //weak
     obj.myTimer = [NSTimer scheduledTimerWithTimeInterval:ti target:obj selector:aSelector userInfo:userInfo repeats:yesOrNo];
-
+    //timer 持有obj，obj弱引用aTarget，obj同时也负责处理aTarget释放时timer的invalidate
     return obj.myTimer;
 }
 @end

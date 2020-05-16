@@ -10,12 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSTimerObject : NSObject
+@interface CLCTimerObject : NSObject
 
 @property (nonatomic, weak) NSObject *target;
 @property (nonatomic, weak) NSTimer *myTimer;
-
-- (void)doCrash;
 
 @end
 

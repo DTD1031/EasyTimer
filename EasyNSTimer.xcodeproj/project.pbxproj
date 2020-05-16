@@ -14,7 +14,7 @@
 		C4093B51246AE7A400CAB849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4093B50246AE7A400CAB849 /* Assets.xcassets */; };
 		C4093B54246AE7A400CAB849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4093B52246AE7A400CAB849 /* LaunchScreen.storyboard */; };
 		C4093B57246AE7A400CAB849 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4093B56246AE7A400CAB849 /* main.m */; };
-		C4093B63246AEA0600CAB849 /* NSTimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C4093B62246AEA0600CAB849 /* NSTimerObject.m */; };
+		C4093B63246AEA0600CAB849 /* CLCTimerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C4093B62246AEA0600CAB849 /* CLCTimerObject.m */; };
 		C4093B66246AF4AC00CAB849 /* MyBaby.m in Sources */ = {isa = PBXBuildFile; fileRef = C4093B65246AF4AC00CAB849 /* MyBaby.m */; };
 		C4093B6A246AF4DB00CAB849 /* NSTimer+Easy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4093B69246AF4DB00CAB849 /* NSTimer+Easy.m */; };
 /* End PBXBuildFile section */
@@ -32,8 +32,8 @@
 		C4093B53246AE7A400CAB849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4093B55246AE7A400CAB849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4093B56246AE7A400CAB849 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C4093B61246AEA0600CAB849 /* NSTimerObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerObject.h; sourceTree = "<group>"; };
-		C4093B62246AEA0600CAB849 /* NSTimerObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerObject.m; sourceTree = "<group>"; };
+		C4093B61246AEA0600CAB849 /* CLCTimerObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLCTimerObject.h; sourceTree = "<group>"; };
+		C4093B62246AEA0600CAB849 /* CLCTimerObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCTimerObject.m; sourceTree = "<group>"; };
 		C4093B64246AF4AC00CAB849 /* MyBaby.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBaby.h; sourceTree = "<group>"; };
 		C4093B65246AF4AC00CAB849 /* MyBaby.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBaby.m; sourceTree = "<group>"; };
 		C4093B68246AF4DB00CAB849 /* NSTimer+Easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Easy.h"; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 		C4093B5D246AE7AF00CAB849 /* EasyTimer */ = {
 			isa = PBXGroup;
 			children = (
-				C4093B61246AEA0600CAB849 /* NSTimerObject.h */,
-				C4093B62246AEA0600CAB849 /* NSTimerObject.m */,
+				C4093B61246AEA0600CAB849 /* CLCTimerObject.h */,
+				C4093B62246AEA0600CAB849 /* CLCTimerObject.m */,
 				C4093B68246AF4DB00CAB849 /* NSTimer+Easy.h */,
 				C4093B69246AF4DB00CAB849 /* NSTimer+Easy.m */,
 			);
@@ -170,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4093B4C246AE7A000CAB849 /* ViewController.m in Sources */,
-				C4093B63246AEA0600CAB849 /* NSTimerObject.m in Sources */,
+				C4093B63246AEA0600CAB849 /* CLCTimerObject.m in Sources */,
 				C4093B46246AE7A000CAB849 /* AppDelegate.m in Sources */,
 				C4093B66246AF4AC00CAB849 /* MyBaby.m in Sources */,
 				C4093B57246AE7A400CAB849 /* main.m in Sources */,
